@@ -1,0 +1,26 @@
+body {  
+    background-color: #faf2e4;  
+    margin: 0 10%;  
+    font-family: sans-serif;  }
+h1 {  
+    text-align: center;  
+    font-family: serif;  
+    font-weight: normal;  
+    text-transform: uppercase;  
+    border-bottom: 1px solid #57b1dc;  
+    }
+h2 {  
+    color: #d1633c;  
+    font-size: 1em;}
+img {
+    width: 270px;
+    border: 3px solid lightblue;
+    border-radius: 50%;
+}
+.double-border {
+    width: 276px;
+    height: 276px;
+    border: 3px solid #d1633c;
+    border-radius: 50%;   
+    margin: 30px auto 0;
+}
