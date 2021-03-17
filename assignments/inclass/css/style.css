@@ -30,6 +30,37 @@ img {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
 }
-header, nav, .hero, .work, .about, .quote, footer {
+header, nav, .hero, .work, .company, .company_image, .quote, footer {
     grid-column: 1 / span 12;
 }
+
+/* Media Queries */
+@media screen and (min-width:655px) {
+    .container {
+        background-color:#ffffff;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 20px;
+    }
+    .company {
+        grid-column: 1 / span 8;
+    }
+    .company_image {
+        grid-column: 9 / span 4;
+    }
+
+    header {
+        grid-column: 1 / span 6;
+    }
+    nav {
+        grid-column: 7 / span 6;
+    }
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap:10px;
+    }
+}
+
