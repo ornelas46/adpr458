@@ -24,9 +24,7 @@ p {
    font-size: 1em; 
 }
 img {
-    width: 270px;
-    border: 3px solid lightblue;
-    border-radius: 50%;
+    max-width: 100%;
 }
 .double-border {
     width: 276px;
@@ -97,17 +95,11 @@ footer {
 .work_heading {
     grid-column: 1 / span 12;
 }
-.work_section1 {
-    grid-column: 1 / span 4;
-    text-align: center;
-}
-.work_section2 {
-    grid-column: 5 / span 4;
-    text-align: center;
-}
-.work_section3 {
-    grid-column: 9 / span 4;
-    text-align: center;
+.work_section {
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
 }
 
 
@@ -124,4 +116,38 @@ footer {
 .social {
     height: 20px;
     width: 20px;
+}
+
+/*** Elements ***/
+.circle {
+    width: 270px;
+    border: 3px solid lightblue;
+    border-radius: 50%;
+}
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3068c9;
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    transition: background-color 250ms;
+}
+.btn:hover {
+    background-color: #104298;
+}
+.card {
+    text-align: center;
+    margin: 1em;
+    padding-bottom: 2em;
+    box-shadow: #525252 0px 0px 5px;
+    max-width: 27.5%;
+}
+.card-title {
+    margin: 0.5em 0 0;
+}
+.card-text {
+    padding: 0 2em 0.5em;
 }

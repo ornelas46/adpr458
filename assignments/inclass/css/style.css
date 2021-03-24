@@ -24,6 +24,7 @@ img {
     max-width: 100%; 
 }
 
+
 /** Grid **/
 .container {
     display: grid;
@@ -63,4 +64,5 @@ header, nav, .hero, .work, .company, .company_image, .quote, footer {
         grid-gap:10px;
     }
 }
+
 
